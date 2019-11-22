@@ -2,7 +2,7 @@
   <v-card class="mx-auto" max-width="344" outlined>
     <v-list-item class="v-d-flex justify-space-between">
       <v-list-item-content>{{selected.name}}</v-list-item-content>
-      <v-list-item-content class="pa-2">{{value}}%</v-list-item-content>
+      <v-list-item-content class="justify-end">{{value}}%</v-list-item-content>
     </v-list-item>
     <v-progress-linear color="light-blue" height="25" :value="value" striped></v-progress-linear>
     <v-stepper alt-labels :value="firstKey">
