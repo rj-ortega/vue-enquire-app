@@ -1,8 +1,9 @@
 <template>
   <v-container>
-    <v-row dense>
+    <progressCard v-if="selected.id" :selected="selected" />
+    <v-row>
       <v-col cols="12" v-for="member in members" :key="member.id">
-        <card :member="member" :selected="selected" />
+        <card :member="member" :selected.sync="selected" />
       </v-col>
     </v-row>
   </v-container>
@@ -10,6 +11,7 @@
 
 <script>
 import Card from "./Card";
+import ProgressCard from "./ProgressCard";
 import API from "../lib/api.js";
 
 export default {
@@ -24,7 +26,8 @@ export default {
     this.members = API.getMembers();
   },
   components: {
-    Card
+    Card,
+    ProgressCard
   }
 };
 </script>

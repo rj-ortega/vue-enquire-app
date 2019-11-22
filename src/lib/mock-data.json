@@ -3,35 +3,47 @@
         {
             "id": 1,
             "name": "Zach Grinke",
-            "relationship": "spouse",
             "phone_number": "555-555-6666",
             "email": "zach@enquire.com",
             "created_at": 1574287127576,
-            "active": true
+            "active": false,
+            "sales_stage": {
+                "2": "Tour"
+            }
         },
         {
             "id": 2,
             "name": "Lori Grinke",
-            "relationship": "Prospect",
             "phone_number": "555-555-5555",
             "email": "lori@enquire.com",
             "address": "Arvada, CO 80002",
             "created_at": 1574287127576,
-            "active": true
+            "active": true,
+            "sales_stage": {
+                "4": "Move-in"
+            }
         },
         {
             "id": 3,
             "name": "Sarah Grinke",
-            "relationship": "Daughter",
             "phone_number": "555-555-4444",
             "email": "sarah@enquire.com",
             "created_at": 1574287127576,
-            "active": false
+            "active": false,
+            "sales_stage": {
+                "1": "Inquiry"
+            }
+        },
+        {
+            "id": 4,
+            "name": "Peter Grinke",
+            "phone_number": "555-555-3333",
+            "email": "peter@enquire.com",
+            "created_at": 1574287127576,
+            "active": true,
+            "sales_stage": {
+                "3": "Deposit"
+            }
         }
-    ],
-    "sales_stage": {
-        "1": "Move-in",
-        "2": "Tour",
-        "3": "Inquiry"
-    }
+    ]
 }
