@@ -2,7 +2,7 @@
   <v-container>
     <v-row dense>
       <v-col cols="12" v-for="member in members" :key="member.id">
-        <card :member="member" />
+        <card :member="member" :selected="selected" />
       </v-col>
     </v-row>
   </v-container>
@@ -16,7 +16,8 @@ export default {
   name: "Demo",
   data() {
     return {
-      members: []
+      members: [],
+      selected: {}
     };
   },
   mounted() {
