@@ -1,12 +1,14 @@
 <template>
   <section>
     <v-app-bar color="#3fafef" class="nav-bar" dark>
-      <v-toolbar-title class="nav-title">progress.io</v-toolbar-title>
+      <router-link :to="{name: 'home'}">
+        <v-toolbar-title class="nav-title">progress.io</v-toolbar-title>
+      </router-link>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <!-- <router-link :to="{name: 'demo'}">
+        <router-link :to="{name: 'demo'}">
           <v-btn x-large text>Demo</v-btn>
-        </router-link>-->
+        </router-link>
       </v-toolbar-items>
     </v-app-bar>
   </section>

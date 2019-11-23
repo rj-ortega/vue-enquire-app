@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "VueParticles"
+  name: "Home"
 };
 </script>
 

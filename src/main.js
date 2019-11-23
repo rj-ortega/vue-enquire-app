@@ -5,7 +5,7 @@ import VueParticles from 'vue-particles'
 import VueRouter from 'vue-router'
 
 import Demo from './views/Demo'
-import VueParticle from './components/VueParticles'
+import Home from './views/Home'
 
 
 Vue.use(VueParticles)
@@ -13,22 +13,21 @@ Vue.use(VueRouter)
 
 Vue.config.productionTip = false
 
+const routes = [{
+  path: "/",
+  name: "home",
+  component: Home
+}, {
+  path: "/demo",
+  name: "demo",
+  component: Demo
+}]
+
+
 const router = new VueRouter({
-  routes // short for `routes: routes`
+  routes
 })
 
-const routes = [
-  [{
-    path: "/demo",
-    name: "demo",
-    component: Demo,
-  },
-  {
-    path: "/",
-    name: "home",
-    component: VueParticle,
-  }]
-]
 
 new Vue({
   el: '#app',
