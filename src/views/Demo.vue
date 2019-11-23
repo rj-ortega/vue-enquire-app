@@ -1,5 +1,5 @@
 <template>
-  <v-container>
+  <v-container class="demo">
     <progressCard v-if="selected.id" :selected="selected" />
     <v-row>
       <v-col cols="12" v-for="member in members" :key="member.id">
@@ -10,8 +10,8 @@
 </template>
 
 <script>
-import Card from "./Card";
-import ProgressCard from "./ProgressCard";
+import Card from "../components/Card";
+import ProgressCard from "../components/ProgressCard";
 import API from "../lib/api.js";
 
 export default {
@@ -31,3 +31,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.demo {
+  z-index: 999;
+}
+</style>

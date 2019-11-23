@@ -4,9 +4,9 @@
       <v-toolbar-title class="nav-title">progress.io</v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <router-link :to="{demo: 'demo'}">
+        <!-- <router-link :to="{name: 'demo'}">
           <v-btn x-large text>Demo</v-btn>
-        </router-link>
+        </router-link>-->
       </v-toolbar-items>
     </v-app-bar>
   </section>
