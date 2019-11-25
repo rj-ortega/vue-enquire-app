@@ -10,11 +10,11 @@ Deployed at https://progress-vue.firebaseapp.com/#/demo
 
 #### Web
 
-![GIF](/progress-vue.mp4)
+![GIF](assets/progress-vue.gif)
 
 #### Mobile
 
-![GIF](./assets/progress-vue-mobile.mp4)
+![GIF](/assets/progress-vue-mobile.gif)
 
 ## Technologies
 
