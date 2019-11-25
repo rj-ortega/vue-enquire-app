@@ -1,24 +1,8 @@
-# vue-enquire-app
+# Vue App
 
-## Project setup
-```
-npm install
-```
+Inspired by the enquire website app, I decided to create a simple app to get familiar with [Vue]()
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Deployed at https://progress-vue.firebaseapp.com/#/demo
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Technologies
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
