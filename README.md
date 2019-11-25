@@ -14,7 +14,7 @@ Deployed at https://progress-vue.firebaseapp.com/#/demo
 
 #### Mobile
 
-![GIF](/assets/progress-vue-mobile.gif)
+![GIF](/assets/progress-vue-mobile.mp4)
 
 ## Technologies
 
