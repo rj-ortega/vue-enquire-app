@@ -1,12 +1,5 @@
 <template>
-  <v-card
-    class="mx-auto"
-    v-bind:class="{ selected: isSelected }"
-    max-width="344"
-    outlined
-    v-model="selected"
-    @click="this.handleClick"
-  >
+  <v-card class="mx-auto" v-bind:class="{ selected: isSelected }" max-width="344" outlined>
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-4" v-if="member.active">
@@ -21,6 +14,12 @@
       </v-list-item-content>
       <v-list-item-avatar tile size="80">
         <img
+          v-if="member.gender === 'female'"
+          src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/maturewoman-3-512.png"
+          alt="Old Woman"
+        />
+        <img
+          v-else
           src="https://cdn0.iconfinder.com/data/icons/user-pictures/100/matureman2-512.png"
           alt="Old Man"
         />
@@ -28,7 +27,7 @@
     </v-list-item>
 
     <v-card-actions>
-      <v-btn text>Select</v-btn>
+      <v-btn v-model="selected" @click="this.handleClick" text>Select</v-btn>
     </v-card-actions>
   </v-card>
 </template>

@@ -3,6 +3,7 @@
         {
             "id": 1,
             "name": "Zach Grinke",
+            "gender": "male",
             "phone_number": "555-555-6666",
             "email": "zach@enquire.com",
             "created_at": 1574287127576,
@@ -14,6 +15,7 @@
         {
             "id": 2,
             "name": "Lori Grinke",
+            "gender": "female",
             "phone_number": "555-555-5555",
             "email": "lori@enquire.com",
             "address": "Arvada, CO 80002",
@@ -26,6 +28,7 @@
         {
             "id": 3,
             "name": "Sarah Grinke",
+            "gender": "female",
             "phone_number": "555-555-4444",
             "email": "sarah@enquire.com",
             "created_at": 1574287127576,
@@ -37,6 +40,7 @@
         {
             "id": 4,
             "name": "Peter Grinke",
+            "gender": "male",
             "phone_number": "555-555-3333",
             "email": "peter@enquire.com",
             "created_at": 1574287127576,

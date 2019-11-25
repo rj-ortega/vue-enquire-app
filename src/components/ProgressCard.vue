@@ -5,18 +5,29 @@
       <v-list-item-content class="justify-end">{{value}}%</v-list-item-content>
     </v-list-item>
     <v-progress-linear color="light-blue" height="25" :value="value" striped></v-progress-linear>
-    <v-stepper alt-labels :value="firstKey">
-      <v-stepper-header>
-        <v-stepper-step step="1" :complete="firstKey > 1">Inquiry</v-stepper-step>
-        <v-divider></v-divider>
-        <v-stepper-step step="2" :complete="firstKey > 2">Tour</v-stepper-step>
-        <v-divider></v-divider>
-        <v-stepper-step step="3" :complete="firstKey > 3">Deposit</v-stepper-step>
-        <v-divider></v-divider>
-        <v-stepper-step step="4">Move-In</v-stepper-step>
-      </v-stepper-header>
-    </v-stepper>
-    <div class="v-d-flex justify-space-around"></div>
+    <v-tooltip right>
+      <template v-slot:activator="{ on }">
+        <div v-on="on">
+          <v-stepper alt-labels :value="firstKey">
+            <v-stepper-header>
+              <v-stepper-step step="1" :complete="firstKey > 1"></v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step step="2" :complete="firstKey > 2"></v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step step="3" :complete="firstKey > 3"></v-stepper-step>
+              <v-divider></v-divider>
+              <v-stepper-step step="4"></v-stepper-step>
+            </v-stepper-header>
+          </v-stepper>
+        </div>
+      </template>
+      <span>
+        1: Inquiry
+        <br />2: Tour
+        <br />3: Deposit
+        <br />4: Move-In
+      </span>
+    </v-tooltip>
   </v-card>
 </template>
 
