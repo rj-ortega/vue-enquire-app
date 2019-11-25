@@ -4,7 +4,7 @@ Inspired by the enquire website app, I decided to create a simple app to get fam
 
 ## Deploy
 
-Deployed at https://progress-vue.firebaseapp.com/#/demo
+Deployed at https://progress-vue.firebaseapp.com/#/
 
 ## Flow
 
@@ -14,7 +14,7 @@ Deployed at https://progress-vue.firebaseapp.com/#/demo
 
 #### Mobile
 
-![GIF](/assets/progress-vue-mobile.mp4)
+![GIF](/assets/progress-vue-mobile.gif)
 
 ## Technologies
 
